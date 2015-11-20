@@ -1,45 +1,63 @@
-/* Style sheet for Responsive Landing Page Example */
-
+/****** 
+Style sheet for Responsive Landing Page Example
+------------------------------------------------*/
 
 /* Global */
-
-* {
-	margin: 0 auto;
-
-}
+* {margin: 0 auto;}
 
 html {
 	font-size: 67.5%;
-}
-p, h1, h3, h6 {
-	font-family: 'Open Sans', sans-serif;
+	color: #636d83;
 }
 
+/* Text */
+p, h1, h2, h3 {font-family: 'Open Sans', sans-serif;}
+
+h1, h2, footer {color: #edf0f7;}
+
 h1 {
-	font-size: 4.2rem;
+	font-size: 4.6rem;
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
+h2 {
+	font-weight: 300;
+	font-size: 2.1rem;
+	font-style: italic;
+}
+
 h3 {
 	font-weight: 600;
 	font-size: 2.2rem;
 	padding: 2em 0;
 }
-h6 {
-	font-weight: 300;
-}
+
 p {
 	font-weight: 400;
-	font-size: 1.3rem
+	font-size: 1.3rem;
+	line-height: 2.1rem;
 }
+/** Section 01*/
+.hero p {color: #c0c8dc;}
+/** Section 02 */
+article p {padding: 0 0 3em;}
+/** Section 03 */
+.three-columns h3 {padding: 2em 0 0.8em;}
+/** Footer */
+footer p {padding: 0.7em 0 0;}
+footer a {color: #fbfcfd;}
 
-
+/* Layout and Positioning */
 section {
 	width: 100%;
 	height: 100%;
 }
 
-/* Universal classes */
+.content {
+	padding: 3em;
+	width: 1200px;
+}
 
 .position-relative {
 	position: relative;
@@ -52,7 +70,15 @@ section {
   	transform: translate(-50%, -50%);
 }
 
+.margin-left-3em {
+	margin: 0 0 0 3em;
+}
 
+.color-44597f {
+	background: #44597f;
+}
+
+/** Floats */
 .float-left {
 	float: left;
 }
@@ -61,8 +87,9 @@ section {
 	float: right;
 }
 
-.width-40 {
-	width: 40%;
+/** Columns */
+.width-30 {
+	width: 30%;
 }
 
 .width-60 {
@@ -73,33 +100,52 @@ section {
 	width: 80%;
 }
 
-
-/* Columns */
-
-
-/* END Global */
-
-
-.hero {
-	background: #a2a2a2;
-	min-height: 500px;
-	text-align: center;
-}
-
+/** Image boxes */
 .image-boxes {
-	background: #ccc;
-	border: #232323 1px;
+	background: #d9dfed;
+	border: #a3acc1 1px;
+	border-radius: 4px;
+}
+/*** Section 02 */
+aside .image-boxes {
 	margin: 3em 1em;
 	width: 400px;
 	height: 300px;
 }
-
-
-.content {
-	padding: 3em;
-	width: 1200px;
+/*** Section 03 */
+article .image-boxes {
+	width: 100%;
+	height: 250px;
+	margin: 0 0 1em 0;
 }
 
-article p {
-	padding: 0 0 3em;
+/** Section 01 */
+.hero {
+	min-height: 500px;
+	text-align: center;
 }
+/** Section 02 */
+.quote {
+	min-height: 300px;
+	text-align: center;
+}
+/** Footer */
+footer {
+	min-height: 100px;
+	width: 100%;
+	float: left;
+}
+
+
+/*------------------------------------------------ 
+Media Queries
+------------------------------------------------*/
+
+
+
+
+/*
+	Made in 2015 by Chris Hall. 
+	Feel free to use as you wish.
+	This is a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+*/
