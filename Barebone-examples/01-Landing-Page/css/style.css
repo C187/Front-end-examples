@@ -92,6 +92,10 @@ section {
 	width: 30%;
 }
 
+.width-35 {
+	width: 35%;
+}
+
 .width-60 {
 	width: 60%;
 }
@@ -107,8 +111,8 @@ section {
 	border-radius: 4px;
 }
 /*** Section 02 */
-aside .image-boxes {
-	margin: 3em 1em;
+.flex-small .image-boxes {
+	margin: 3em;
 	width: 400px;
 	height: 300px;
 }
@@ -137,13 +141,172 @@ footer {
 }
 
 
+
+/*  FLEX SHIT */
+
+.flex-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.flex-item-big {
+	flex: 2;
+}
+
+.flex-item-small {
+	flex:1;
+}
+
+
+/*  FLEX SHIT */
+
+
 /*------------------------------------------------ 
 Media Queries
 ------------------------------------------------*/
 
+/*
 
+OH GOD IT'S SO UGLY!! ALL OF IT'S!!! MUST CLEAN! MUST CLEAN!!
 
+*/
 
+@media screen and (min-width: 320px) {
+
+	h1 {font-size: 3.0rem;}
+
+	h2 {font-size: 1.8rem;}
+
+	h3 {padding: 1em 0;}
+
+	.width-60, .width-30 {
+		width: 100%;
+	}
+
+.margin-left-3em {
+	margin: 0;
+}
+
+	}
+	/** Section 01 */
+	}
+	.hero {
+		min-height: 600px;
+	}
+
+		/*** Section 02 */
+		aside .image-boxes {
+			margin: 0;
+			width: 200px;
+			height: 200px;
+		}
+
+	.content-text {
+		width: 300px;
+		flex-direction: column;
+		padding: 1em;
+	}
+
+.flex-small .image-boxes {
+	margin: 1em 0 0;
+	width: 300px;
+
+}
+
+	#switch > div:nth-child(1) {
+	order: 2;
+}
+
+.content {
+	width: 300px;
+}
+
+}
+
+@media only screen and (min-width: 680px) {
+
+	h1 {font-size: 4.6rem;}
+
+	h2 {font-size: 2.1rem;}
+
+	.content-text {
+	width: 660px;
+	flex-direction: row;
+}
+
+	#switch > div:nth-child(1) {
+	order: 1;
+}
+
+.flex-item-big {
+	flex: 2;
+}
+
+.flex-item-small {
+	flex:1;
+}
+
+.content {
+	width: 640px;
+}
+
+.width-30 {
+	width: 30%
+}
+
+.margin-left-3em {
+	margin: 0 0 0 3em;
+}
+
+}
+
+@media only screen and (min-width: 980px) {
+	h1 {font-size: 4.6rem;}
+	h2 {font-size: 2.1rem;}
+
+	.content-text {
+		width: 1200px;
+		flex-direction: row;
+	}
+
+	#switch > div:nth-child(2) {
+		order: 2;
+	}
+
+	.flex-small .image-boxes {
+	margin: 3em;
+	width: 400px;
+	height: 300px;
+	}
+
+	.flex-big {
+		margin: 2em 0;
+	}
+
+	.content {
+	width: 1200px;
+}
+
+.width-30 {
+	width: 30%
+}
+
+.margin-left-3em {
+	margin: 0 0 0 3em;
+}
+}
+
+/* @media only screen and (max-device-width: 1400px) {
+	/*** Section 02 */ /*
+	aside .image-boxes {
+		margin: 3em 1em;
+		width: 400px;
+		height: 300px;
+		clear:both;
+	}
+
+} */
 /*
 	Made in 2015 by Chris Hall. 
 	Feel free to use as you wish.
