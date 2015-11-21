@@ -231,33 +231,33 @@ OH GOD IT'S SO UGLY!! ALL OF IT'S!!! MUST CLEAN! MUST CLEAN!!
 	h2 {font-size: 2.1rem;}
 
 	.content-text {
-	width: 660px;
-	flex-direction: row;
-}
+		width: 660px;
+		flex-direction: row;
+	}
 
 	#switch > div:nth-child(1) {
-	order: 1;
-}
+		order: 1;
+	}
 
-.flex-item-big {
-	flex: 2;
-}
+	.flex-item-big {
+		flex: 2;
+	}
 
-.flex-item-small {
-	flex:1;
-}
+	.flex-item-small {
+		flex:1;
+	}
 
-.content {
-	width: 640px;
-}
+	.content {
+		width: 640px;
+	}
 
-.width-30 {
-	width: 30%
-}
+	.width-30 {
+		width: 30%
+	}
 
-.margin-left-3em {
-	margin: 0 0 0 3em;
-}
+	.margin-left-3em {
+		margin: 0 0 0 3em;
+	}
 
 }
 
@@ -288,25 +288,15 @@ OH GOD IT'S SO UGLY!! ALL OF IT'S!!! MUST CLEAN! MUST CLEAN!!
 	width: 1200px;
 }
 
-.width-30 {
-	width: 30%
-}
-
-.margin-left-3em {
-	margin: 0 0 0 3em;
-}
-}
-
-/* @media only screen and (max-device-width: 1400px) {
-	/*** Section 02 */ /*
-	aside .image-boxes {
-		margin: 3em 1em;
-		width: 400px;
-		height: 300px;
-		clear:both;
+	.width-30 {
+		width: 30%
 	}
 
-} */
+	.margin-left-3em {
+		margin: 0 0 0 3em;
+	}
+}
+
 /*
 	Made in 2015 by Chris Hall. 
 	Feel free to use as you wish.
