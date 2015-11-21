@@ -12,7 +12,6 @@ html {
 
 /* Text */
 p, h1, h2, h3 {font-family: 'Open Sans', sans-serif;}
-
 h1, h2, footer {color: #edf0f7;}
 
 h1 {
@@ -38,6 +37,7 @@ p {
 	font-size: 1.3rem;
 	line-height: 2.1rem;
 }
+
 /** Section 01*/
 .hero p {color: #c0c8dc;}
 /** Section 02 */
@@ -59,9 +59,7 @@ section {
 	width: 1200px;
 }
 
-.position-relative {
-	position: relative;
-}
+.position-relative {position: relative;}
 
 .horizontal-and-vertical-center {
   	position: absolute;
@@ -70,22 +68,12 @@ section {
   	transform: translate(-50%, -50%);
 }
 
-.margin-left-3em {
-	margin: 0 0 0 3em;
-}
-
-.color-44597f {
-	background: #44597f;
-}
+.margin-left-3em {margin: 0 0 0 3em;}
+.color-44597f {background: #44597f;}
 
 /** Floats */
-.float-left {
-	float: left;
-}
-
-.float-right {
-	float: right;
-}
+.float-left {float: left;}
+.float-right {float: right;}
 
 /** Columns */
 .width-30 {
@@ -111,6 +99,9 @@ section {
 	border-radius: 4px;
 }
 /*** Section 02 */
+.content-text {display: flex;}
+.flex-item-big {flex: 2;}
+.flex-item-small {flex:1;}
 .flex-small .image-boxes {
 	margin: 3em;
 	width: 400px;
@@ -128,7 +119,7 @@ article .image-boxes {
 	min-height: 500px;
 	text-align: center;
 }
-/** Section 02 */
+/** Section 03 */
 .quote {
 	min-height: 300px;
 	text-align: center;
@@ -142,137 +133,66 @@ footer {
 
 
 
-/*  FLEX SHIT */
-
-.flex-wrapper {
-	display: flex;
-	flex-direction: row;
-}
-
-
-.flex-item-big {
-	flex: 2;
-}
-
-.flex-item-small {
-	flex:1;
-}
-
-
-/*  FLEX SHIT */
-
 
 /*------------------------------------------------ 
 Media Queries
 ------------------------------------------------*/
 
-/*
-
-OH GOD IT'S SO UGLY!! ALL OF IT'S!!! MUST CLEAN! MUST CLEAN!!
-
-*/
-
 @media screen and (min-width: 320px) {
 
+	/* Text */
 	h1 {font-size: 3.0rem;}
-
 	h2 {font-size: 1.8rem;}
-
 	h3 {padding: 1em 0;}
-
-	.width-60, .width-30 {
-		width: 100%;
-	}
-
-.margin-left-3em {
-	margin: 0;
-}
-
-	}
-	/** Section 01 */
-	}
-	.hero {
-		min-height: 600px;
-	}
-
-		/*** Section 02 */
-		aside .image-boxes {
-			margin: 0;
-			width: 200px;
-			height: 200px;
-		}
-
+	/* Section 01 */
+	.hero {min-height: 600px;}
+	/* Section 02 */
 	.content-text {
 		width: 300px;
 		flex-direction: column;
 		padding: 1em;
 	}
 
-.flex-small .image-boxes {
-	margin: 1em 0 0;
-	width: 300px;
+	.flex-small .image-boxes {
+		margin: 1em 0 0;
+		width: 300px;
+	}
 
+	#switch > div:nth-child(1) {order: 2;} /*NOTE: Switches Order*/
+	/* Section 04 */
+	.content {width: 300px;}
+	.margin-left-3em {margin: 0;}
+	/* Section 02 AND 04*/
+	.width-60, .width-30 {width: 100%;}
 }
 
-	#switch > div:nth-child(1) {
-	order: 2;
-}
-
-.content {
-	width: 300px;
-}
-
+@media only screen and (min-width: 680px), only screen and (min-width: 980px) {
+	
+	/* Text */
+	h1 {font-size: 4.6rem;}
+	h2 {font-size: 2.1rem;}
+	/*Section 02*/
+	.content-text {flex-direction: row;}
+	/*Section 04*/
+	.width-30 {width: 30%;}
+	.margin-left-3em {margin: 0 0 0 3em;}
 }
 
 @media only screen and (min-width: 680px) {
 
-	h1 {font-size: 4.6rem;}
-
-	h2 {font-size: 2.1rem;}
-
-	.content-text {
-		width: 660px;
-		flex-direction: row;
-	}
-
-	#switch > div:nth-child(1) {
-		order: 1;
-	}
-
-	.flex-item-big {
-		flex: 2;
-	}
-
-	.flex-item-small {
-		flex:1;
-	}
-
-	.content {
-		width: 640px;
-	}
-
-	.width-30 {
-		width: 30%
-	}
-
-	.margin-left-3em {
-		margin: 0 0 0 3em;
-	}
-
+	/*Section 02*/
+	.content-text {width: 660px;}
+	#switch > div:nth-child(1) {order: 1;}  /*NOTE: Switches Order*/
+	.flex-item-big {flex: 2;}
+	.flex-item-small {flex:1;}
+	/*Section 04*/
+	.content {width: 640px;}
 }
 
 @media only screen and (min-width: 980px) {
-	h1 {font-size: 4.6rem;}
-	h2 {font-size: 2.1rem;}
 
-	.content-text {
-		width: 1200px;
-		flex-direction: row;
-	}
-
-	#switch > div:nth-child(2) {
-		order: 2;
-	}
+	/*Section 02*/
+	.content-text {width: 1200px;}
 
 	.flex-small .image-boxes {
 	margin: 3em;
@@ -280,21 +200,10 @@ OH GOD IT'S SO UGLY!! ALL OF IT'S!!! MUST CLEAN! MUST CLEAN!!
 	height: 300px;
 	}
 
-	.flex-big {
-		margin: 2em 0;
-	}
-
-	.content {
-	width: 1200px;
-}
-
-	.width-30 {
-		width: 30%
-	}
-
-	.margin-left-3em {
-		margin: 0 0 0 3em;
-	}
+	.flex-big {margin: 2em 0;}
+	#switch > div:nth-child(2) {order: 2;} /*NOTE: Switches Order*/
+	/*Section 04*/
+	.content {width: 1200px;}
 }
 
 /*
