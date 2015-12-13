@@ -1,0 +1,47 @@
+/****** 
+Style sheet for Pure CSS "No Image" Image
+------------------------------------------------*/
+* {box-sizing: border-box;}
+
+body {margin: 50px;}
+
+.no-image {
+  width: 174px;
+  height: 88px;
+  border: 5px solid #f0f3f6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.shape00 {
+  width: 20px;
+  height: 20px;
+  background: #f0f3f6;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.shape01, .shape02 {
+  height: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  position: relative;
+}
+
+.shape01 {
+  width: 51px;
+  border-bottom: 51px solid #e5e9ee;
+  left: 10px;
+}
+
+.shape02 {
+  width: 63px;
+  border-bottom: 63px solid #f0f3f6;
+  top: -62px;
+  left: 55px;
+}
