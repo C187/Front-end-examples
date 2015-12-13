@@ -12,9 +12,9 @@ This projects are compleated, and ready for viewing.
 
 1. Barebone-examples
   * [01-Landing-Page](https://github.com/C187/Front-end-examples/tree/master/Barebone-examples/01-Landing-Page)
-
-
-
+2. Snippets  
+  * Pure-CSS-Images
+    * [01-No-Image](https://github.com/C187/Front-end-examples/tree/master/Snippets/Pure-CSS-Images/01-No-Image)
 
 ####Notes
 
