@@ -1,0 +1,32 @@
+/*-------------------------------
+Style sheet for Landing-Sign-Up
+--------------------------------*/
+
+/*--------------
+Global Styles
+---------------*/
+
+* {
+	margin: 0;
+  	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px; /* Creates a base to calculate EM units. */
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Montserrat', 'Open Sans', sans-serif;
+	font-weight: 700;
+}
