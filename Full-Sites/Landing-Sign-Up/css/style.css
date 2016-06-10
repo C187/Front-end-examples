@@ -24,9 +24,117 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	width: 100%;
+	color: #f4f4fa;
 }
 
 h1 {
 	font-family: 'Montserrat', 'Open Sans', sans-serif;
 	font-weight: 700;
+	font-size: 1.500em;
+}
+
+p {
+	font-size: 0.875em;
+}
+
+input {
+
+}
+
+button {
+	border: 0;
+	outline: 0;
+	background: none;
+}
+
+.frw, .fcw, .frnw, .fcnw {
+	display: flex;
+}
+
+.frw, .fcw {
+	flex-wrap: wrap;
+}
+
+.frnw, .fcnw {
+	flex-wrap: nowrap;
+}
+
+.frw, .frnw {
+	flex-direction: row;
+}
+
+.fcw, .fcnw {
+	flex-direction: column;
+}
+
+
+
+section#hero {
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+}
+
+div#hero--bg-img,
+section#hero--bg-cover,
+aside#hero--sign-up {
+	height: 100%;
+}
+
+div#hero--bg-img {
+	background: url('../img/bg-img.jpg') center / cover;
+	width: 63.15%;
+}
+
+section#hero--bg-cover {
+	background: rgba(60,72,114,0.8);
+	justify-content: center;
+}
+
+div.logo {
+	background: url('../img/logo.svg') no-repeat;
+	height: 40px;
+	width: 40px;
+	margin: 20px 0 0;
+}
+section#hero--bg-cover header,
+section#hero--bg-cover article {
+	width: 80%;
+}
+
+section#hero--bg-cover article h1 {
+	margin: 0 0 30px 0;
+}
+
+section#hero--bg-cover article p {
+	line-height: 1.25em;
+}
+
+aside#hero--sign-up {
+	width: 36.85%;
+	justify-content: center;
+}
+
+aside#hero--sign-up div {
+	width: 80%;
+	align-self: center;
+}
+
+aside#hero--sign-up div input {
+	height: 40px;
+	border: 1px solid #b7bedb;
+	background:#f1f0f8;
+	margin: 0 0 15px 0;
+	padding: 0 15px;
+}
+
+aside#hero--sign-up div p {
+	color: #737788;
+	margin: 15px 0 0;
+	align-self: center;
+}
+
+aside#hero--sign-up div p button {
+	color: #76b9f4;
+	font-weight: 600;
 }
