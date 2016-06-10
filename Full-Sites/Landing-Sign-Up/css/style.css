@@ -2,9 +2,9 @@
 Style sheet for Landing-Sign-Up
 --------------------------------*/
 
-/*--------------
+/*------------------------------
 Global Styles
----------------*/
+------------------------------*/
 
 * {
 	margin: 0;
@@ -16,15 +16,13 @@ body {
 	height: 100%;
 }
 
-html {
-	font-size: 16px; /* Creates a base to calculate EM units. */
-}
+html { font-size: 16px; /* Creates a base to calculate EM units. */ }
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	width: 100%;
-	color: #f4f4fa;
+	color: rgb(244, 244, 250);
 }
 
 h1 {
@@ -33,52 +31,79 @@ h1 {
 	font-size: 1.500em;
 }
 
-p {
-	font-size: 0.875em;
-}
+p { font-size: 0.875em; }
 
 input {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: rgb(115, 119, 136);
+	outline: none;
 
 }
+
+input:focus { color: rgb(85, 88, 101); }
 
 button {
 	border: 0;
 	outline: 0;
 	background: none;
+	cursor: pointer;
 }
 
-.frw, .fcw, .frnw, .fcnw {
-	display: flex;
-}
+.frw, .fcw { display: flex; }
 
-.frw, .fcw {
-	flex-wrap: wrap;
-}
+.frw, .fcw { flex-wrap: wrap; }
 
-.frnw, .fcnw {
-	flex-wrap: nowrap;
-}
+.frw { flex-direction: row; }
 
-.frw, .frnw {
-	flex-direction: row;
-}
-
-.fcw, .fcnw {
-	flex-direction: column;
-}
+.fcw { flex-direction: column; }
 
 
+/*------------------------------
+Page Styles
+------------------------------*/
 
-section#hero {
-	min-height: 100vh;
-	height: 100%;
-	width: 100%;
-}
+/* DRY Styles */
 
+section#hero,
 div#hero--bg-img,
 section#hero--bg-cover,
 aside#hero--sign-up {
 	height: 100%;
+}
+
+section#hero--bg-cover header,
+section#hero--bg-cover article,
+aside#hero--sign-up div {
+	width: 80%;
+}
+
+section#hero--bg-cover,
+aside#hero--sign-up  {
+	justify-content: center;
+}
+
+aside#hero--sign-up div,
+aside#hero--sign-up div p {
+	align-self: center;
+}
+
+div.logo,
+aside#hero--sign-up div input,
+aside#hero--sign-up div > button {
+	height: 40px;
+}
+
+aside#hero--sign-up div > button,
+aside#hero--sign-up div p button {
+	font-weight: 600;
+}
+
+/* END DRY Styles */
+
+section#hero {
+	min-height: 100vh;
+	width: 100%;
 }
 
 div#hero--bg-img {
@@ -86,55 +111,63 @@ div#hero--bg-img {
 	width: 63.15%;
 }
 
-section#hero--bg-cover {
-	background: rgba(60,72,114,0.8);
-	justify-content: center;
-}
+section#hero--bg-cover { background: rgba(60,72,114,0.8); }
 
 div.logo {
 	background: url('../img/logo.svg') no-repeat;
-	height: 40px;
 	width: 40px;
 	margin: 20px 0 0;
 }
-section#hero--bg-cover header,
-section#hero--bg-cover article {
-	width: 80%;
-}
 
-section#hero--bg-cover article h1 {
-	margin: 0 0 30px 0;
-}
+section#hero--bg-cover article h1 { margin: 0 0 30px 0; }
 
-section#hero--bg-cover article p {
-	line-height: 1.25em;
-}
+section#hero--bg-cover article p { line-height: 1.25em; }
 
-aside#hero--sign-up {
-	width: 36.85%;
-	justify-content: center;
-}
-
-aside#hero--sign-up div {
-	width: 80%;
-	align-self: center;
-}
+aside#hero--sign-up { width: 36.85%; }
 
 aside#hero--sign-up div input {
-	height: 40px;
-	border: 1px solid #b7bedb;
-	background:#f1f0f8;
+	border: 1px solid rgb(183, 190, 219);
+	background:rgb(241, 240, 248);
 	margin: 0 0 15px 0;
 	padding: 0 15px;
 }
 
-aside#hero--sign-up div p {
-	color: #737788;
-	margin: 15px 0 0;
-	align-self: center;
+aside#hero--sign-up div > button {
+	text-transform: uppercase;
+	background: rgb(118, 185, 244);
+	color: rgb(244, 244, 250);
+	font-size: 1em;
 }
 
-aside#hero--sign-up div p button {
-	color: #76b9f4;
-	font-weight: 600;
+aside#hero--sign-up div p {
+	color: rgb(115, 119, 136);
+	margin: 15px 0 0;
+}
+
+aside#hero--sign-up div p button { color: rgb(118, 185, 244); }
+
+
+/*------------------------------
+Media Queries
+------------------------------*/
+
+@media screen and (max-width: 699px) {
+
+	div#hero--bg-img,
+	aside#hero--sign-up {
+		width: 100%;
+		flex: 1;
+	}
+
+	div#hero--bg-img { height: 60vh; }
+
+	aside#hero--sign-up { height: 40vh; }
+
+}
+
+
+@media screen and (max-width: 360px) {
+
+	h1 { font-size: 1.25em; }
+
 }
